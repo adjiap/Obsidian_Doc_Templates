@@ -44,7 +44,9 @@ Tags:
 
 ## Tables & Images
 
-{% for annotation in annotations -%}{%- if annotation.imageRelativePath and annotation.comment -%}### {{ annotation.comment }}
+{% for annotation in annotations -%}
+{%- if annotation.imageRelativePath and annotation.comment -%}
+### {{ annotation.comment }}
 ![[{{annotation.imageRelativePath}}]]
 
 {% endif -%}
