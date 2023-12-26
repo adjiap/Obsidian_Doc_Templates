@@ -14,8 +14,9 @@ Zotero Link: {{pdfZoteroLink}}
 
 ---
 ## Direct Quotes with Comments
+
 {% for annotation in annotations -%}
-{% if not annotation.imageRelativePath and annotation.comment and annotation.annotatedText %}
+{%- if not annotation.imageRelativePath and annotation.comment and annotation.annotatedText -%}
 ### {{ annotation.comment }}
 {% endif %}
 {%- if annotation.annotatedText and annotation.comment %}
@@ -30,8 +31,9 @@ Tags:
 {% endfor -%}
 
 ## Direct Quotes without Comments
+
 {% for annotation in annotations -%}
-{% if not annotation.imageRelativePath and not annotation.comment and annotation.annotatedText  %}
+{%- if not annotation.imageRelativePath and not annotation.comment and annotation.annotatedText -%}
 {{ annotation.annotatedText }} [Page {{ annotation.page }}](zotero://open-pdf/library/items/{{ annotation.attachment.itemKey}}?page={{ annotation.page }}&annotation={{ annotation.id }})
 Tags:
 {% if	annotation.color %}- #{{ annotation.type | lower }}_{{ annotation.colorCategory | lower }}
