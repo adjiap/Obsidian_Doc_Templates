@@ -43,7 +43,9 @@ Tags:
 {% endfor -%}
 
 ## Tables & Images
+
 {% for annotation in annotations -%}{%- if annotation.imageRelativePath and annotation.comment -%}### {{ annotation.comment }}
 ![[{{annotation.imageRelativePath}}]]
-{%- endif %}
+
+{% endif -%}
 {% endfor -%}
