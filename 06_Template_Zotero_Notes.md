@@ -18,7 +18,7 @@ Zotero Link: {{pdfZoteroLink}}
 {% if not annotation.imageRelativePath and annotation.comment and annotation.annotatedText %}
 ### {{ annotation.comment }}
 {% endif %}
-{%- if annotation.annotatedText %}
+{%- if annotation.annotatedText and annotation.comment %}
 {{ annotation.annotatedText }} [Page {{ annotation.page }}](zotero://open-pdf/library/items/{{ annotation.attachment.itemKey}}?page={{ annotation.page }}&annotation={{ annotation.id }})
 Tags:
 {% if	annotation.color %}- #{{ annotation.type | lower }}_{{ annotation.colorCategory | lower }}
