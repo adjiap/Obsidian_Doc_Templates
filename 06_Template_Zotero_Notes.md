@@ -20,9 +20,12 @@ Zotero Link: {{pdfZoteroLink}}
 {% endif %}
 {%- if annotation.annotatedText %}
 {{ annotation.annotatedText }} [Page {{ annotation.page }}](zotero://open-pdf/library/items/{{ annotation.attachment.itemKey}}?page={{ annotation.page }}&annotation={{ annotation.id }})
-{% if	annotation.color %}{{ annotation.type | capitalize }} (**{{ annotation.colorCategory }}**)
-{%- else %}{{ annotation.type | capitalize }}
-{% endif %} 
+Tags:
+{% if	annotation.color %}- #{{ annotation.type | lower }}_{{ annotation.colorCategory | lower }}
+{%- else %}- #{{ annotation.type | lower }}
+{% endif %}
+{% for tags in annotation.tags %}- #{{ tags.tag }}
+{% endfor %}
 {%- endif %}
 {% endfor -%}
 
@@ -30,9 +33,12 @@ Zotero Link: {{pdfZoteroLink}}
 {% for annotation in annotations -%}
 {% if not annotation.imageRelativePath and not annotation.comment and annotation.annotatedText  %}
 {{ annotation.annotatedText }} [Page {{ annotation.page }}](zotero://open-pdf/library/items/{{ annotation.attachment.itemKey}}?page={{ annotation.page }}&annotation={{ annotation.id }})
-{% if	annotation.color %}{{ annotation.type | capitalize }} (**{{ annotation.colorCategory }}**)
-{%- else %}{{ annotation.type | capitalize }}
-{% endif %} 
+Tags:
+{% if	annotation.color %}- #{{ annotation.type | lower }}_{{ annotation.colorCategory | lower }}
+{%- else %}- #{{ annotation.type | lower }}
+{% endif %}
+{% for tags in annotation.tags %}- #{{ tags.tag }}
+{% endfor %}
 {%- endif %}
 {% endfor -%}
 
