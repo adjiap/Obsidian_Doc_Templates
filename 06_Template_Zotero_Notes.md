@@ -1,11 +1,14 @@
 ---
-Year: '{{ date | format("YYYY") }}'
-Author: "{{ authors }}{{ directors }}"
+year: '{{ date | format("YYYY") }}'
+author: "{{ authors }}{{ directors }}"
 tags:
   - zoteroreference
+annotations last modified on: {{ importDate | format ("YYYY-MM-DD HH:mm:ss")}}
 ---
+
 ```toc
 ```
+
 {# FYI, the shape looks weird for the template below, but that's actually intentional, because the result would be in the correct template #}
 
 Title: {{title}}
