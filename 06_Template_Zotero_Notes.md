@@ -24,6 +24,7 @@ Zotero Link: {{pdfZoteroLink}}
 {% endif %}
 {%- if annotation.annotatedText and annotation.comment %}
 {{ annotation.annotatedText }} [Page {{ annotation.page }}](zotero://open-pdf/library/items/{{ annotation.attachment.itemKey}}?page={{ annotation.page }}&annotation={{ annotation.id }})
+
 Tags:
 {% if	annotation.color -%}
 - #{{ annotation.type | lower }}_{{ annotation.colorCategory | lower }}
@@ -41,6 +42,7 @@ Tags:
 {% for annotation in annotations -%}
 {%- if not annotation.imageRelativePath and not annotation.comment and annotation.annotatedText -%}
 {{ annotation.annotatedText }} [Page {{ annotation.page }}](zotero://open-pdf/library/items/{{ annotation.attachment.itemKey}}?page={{ annotation.page }}&annotation={{ annotation.id }})
+
 Tags:
 {% if	annotation.color -%}
 - #{{ annotation.type | lower }}_{{ annotation.colorCategory | lower }}
@@ -50,6 +52,7 @@ Tags:
 {%- for tags in annotation.tags -%}
 - #{{ tags.tag }}
 {% endfor %}
+---
 {% endif -%}
 {% endfor -%}
 
