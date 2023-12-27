@@ -30,7 +30,7 @@ Tags:
 {%- for tags in annotation.tags -%}
 - #{{ tags.tag }}
 {% endfor %}
-{%- endif %}
+{%- endif -%}
 {% endfor -%}
 
 ## Direct Quotes without Comments
@@ -47,7 +47,7 @@ Tags:
 {%- for tags in annotation.tags -%}
 - #{{ tags.tag }}
 {% endfor %}
-{%- endif %}
+{% endif -%}
 {% endfor -%}
 
 ## Tables & Images
