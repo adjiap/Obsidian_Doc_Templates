@@ -3,6 +3,9 @@ year: '{{ date | format("YYYY") }}'
 author: "{{ authors }}{{ directors }}"
 tags:
   - zoteroreference
+  {% for tag in tags -%}
+  - {{ tag.tag }}
+  {% endfor %}
 annotations last modified on: {{ importDate | format ("YYYY-MM-DD HH:mm:ss")}}
 ---
 
