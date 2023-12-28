@@ -6,7 +6,7 @@ tags:
   {% for tag in tags -%}
   - {{ tag.tag }}
   {% endfor %}
-annotations last modified on: {{ importDate | format ("YYYY-MM-DD HH:mm:ss")}}
+imported on: {{ importDate | format ("YYYY-MM-DD HH:mm:ss")}}
 ---
 
 ```toc
