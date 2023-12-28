@@ -59,6 +59,24 @@ Tags:
 {% endif -%}
 {% endfor -%}
 
+# My Direct Notes
+{% for annotation in annotations -%}
+{%- if not annotation.imageRelativePath and not annotation.annotatedText and annotation.comment -%}
+> [!paraphrase] {{ annotation.comment }} [Page {{ annotation.page }}](zotero://open-pdf/library/items/{{ annotation.attachment.itemKey}}?page={{ annotation.page }}&annotation={{ annotation.id }})
+
+Tags:
+{% if	annotation.color -%}
+- #{{ annotation.type | lower }}_{{ annotation.colorCategory | lower }}
+{% else -%}
+- #{{ annotation.type | lower }}
+{% endif %}
+{%- for tags in annotation.tags -%}
+- #{{ tags.tag }}
+{% endfor %}
+---
+{% endif -%}
+{% endfor -%}
+
 ## Tables & Images
 
 {% for annotation in annotations -%}
