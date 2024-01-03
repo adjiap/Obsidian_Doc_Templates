@@ -59,7 +59,7 @@ Tags:
 {% endif -%}
 {% endfor -%}
 
-# My Direct Notes
+## My Direct Notes
 {% for annotation in annotations -%}
 {%- if not annotation.imageRelativePath and not annotation.annotatedText and annotation.comment -%}
 > [!paraphrase] {{ annotation.comment }} [Page {{ annotation.page }}](zotero://open-pdf/library/items/{{ annotation.attachment.itemKey}}?page={{ annotation.page }}&annotation={{ annotation.id }})
