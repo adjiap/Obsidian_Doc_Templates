@@ -7,22 +7,22 @@ Tags:
 ```toc
 ```
 
-## 📖Original Book/Series
+# 📖Original Book/Series
 
-## 🚀 The Book in 3 Sentences
+# 🚀 The Book in 3 Sentences
 
-## 🎨 Impressions
+# 🎨 Impressions
 
-### 🔍How I Discovered It
+## 🔍How I Discovered It
 
-### 🤔Who Should Read It?
+## 🤔Who Should Read It?
 
-### ☘️ How the Book Changed Me
+## ☘️ How the Book Changed Me
 
-## ✍️ My Top 3 Quotes
+# ✍️ My Top 3 Quotes
 
-## 📒 Insights + Notes
+# 📒 Insights + Notes
 
-> **Author's Notes**: 
+> [!info] **Author's Notes**: 
 > Insights and notes from novels will not have the usual points like from other "self-help" or particularly themed books. l will instead gather quotes or paragraphs into what I think are points that are relevant to myself, and later put interesting but can't be put in anywhere, quotes, into the Misc. section
 

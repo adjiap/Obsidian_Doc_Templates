@@ -8,16 +8,16 @@ Class:
 ```toc
 ```
 
-## 📑References
+# 📑References
 - 
 
 ---
 
-## ❓Questions/Cues
+# ❓Questions/Cues
 - 
 
-## 🗒Notes
+# 🗒Notes
 - 
 
-## ❗ Summary
+# ❗ Summary
 Highlight ==what’s important!==

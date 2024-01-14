@@ -1,25 +1,25 @@
 
 %% A blog is just like having a long conversation with people, so it should make sense that things you enjoy talking about will be closely related to your passion. %%
 
-## Intro
+# Intro
 %% 
 * A promise statement
 * A preview of what's to come 
 %%
 
-## Overview
+# Overview
 %% 
 * A simple definition
 * Examples
 * Transition to the next section
 * %%
 
-## Steps
+# Steps
 %%
 * Detail of each the steps 
 %%
 
-## Checklist
+# Checklist
 
 Inspiration ⛅
 - [ ] Read articles and watch videos that inspire me
